@@ -1,0 +1,85 @@
+#stage {
+  width: 100vw;
+  height: 100vh;
+}
+
+#stage a {
+  position: absolute;
+}
+#stage a img {
+  background: #fff;
+}
+
+#stage a:nth-of-type(1) {
+  animation-name: fader;
+  animation-delay: 4s;
+  animation-duration: 1s;
+  z-index: 20;
+}
+#stage a:nth-of-type(2) {
+  z-index: 10;
+}
+#stage a:nth-of-type(n + 3) {
+  display: none;
+}
+
+@keyframes fader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  --color: white;
+  background-color: transparent;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  cursor: pointer;
+  width: 150px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 30px;
+  position: absolute;
+
+  top: 73%;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 220%;
+  height: 220%;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: black;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+button:hover::before {
+  top: -35px;
+  left: -50px;
+}
