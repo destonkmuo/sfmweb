@@ -2,6 +2,7 @@ function Navbar() {
   return (
     <>
       <header className="main-header">
+      <img className="logo" src="https://raw.githubusercontent.com/destonkmuo/sfmweb/main/public/logo.png" alt="logo.jpg"></img>
         <div className="container">
           <nav className="navbar navbar-expand-lg main-nav px-0">
             <div className="collapse navbar-collapse" id="mainMenu">

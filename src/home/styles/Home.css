@@ -61,6 +61,11 @@ ul > li {
 .navbar-nav li {
   color: white;
 }
+.logo {
+  width: 4%;
+  position: fixed;
+  left: 3%;
+}
 
 .main-header {
   position: fixed;
@@ -71,7 +76,7 @@ ul > li {
   z-index: 99;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.265);
-  height: 5%;
+  height: 8%;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
