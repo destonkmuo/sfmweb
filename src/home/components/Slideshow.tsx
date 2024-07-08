@@ -23,7 +23,7 @@ function Slideshow() {
       <div id="stage" ref={stageRef} style={{ width: "100%", height: "100%" }}>
         <a href="1.jpg">
           <img
-            src="https://raw.githubusercontent.com/destonkmuo/sfmweb/a1611758570ec8d39435052352860d5c4c7b6837/public/churchFishEye.jpeg"
+            src="https://www.givelify.com/wp-content/uploads/2021/02/The-Black-Church-Black-History-in-America_creative_noBubbles-copy-scaled.jpg"
             style={{ width: "100vw", height: "100vh", objectFit: "contain" }}
             alt="slide1"
           />{" "}
@@ -77,6 +77,24 @@ function Slideshow() {
             alt="slide1"
           />{" "}
         </a>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          display: "grid",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "15vh",
+          top: "30%",
+          width: "100vw",
+          fontSize: "50px",
+          fontWeight: "bold",
+          zIndex: "100",
+          color: "white",
+        }}
+      >
+        <h1 style={{margin: "0", padding: "0"}}>The Foundation</h1>
+        <h4 style={{textAlign: "center", margin: "0", padding: "0"}}>of God standeth sure</h4>
       </div>
       <div className="buttonContainer">
         <button>Learn More</button>

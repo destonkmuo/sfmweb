@@ -70,6 +70,7 @@ ul > li {
   justify-content: center;
   z-index: 99;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.265);
   height: 5%;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
